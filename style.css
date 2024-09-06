@@ -93,6 +93,10 @@ hr {
     font-size: 1rem;
 }
 
+img, table {
+    max-width: 100%;
+    height: auto;
+}
 .section table,
 .section th,
 .section td {
@@ -148,20 +152,25 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+    .section {
+        flex: 1 1 100%; /* Mengisi lebar penuh pada layar kecil */
+        margin: 0.5rem;
+    }
+
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Sesuaikan ukuran heading */
     }
 
     .section img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .section table {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .warning {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
