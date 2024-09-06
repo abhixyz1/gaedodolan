@@ -1,0 +1,167 @@
+body {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: -1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #00a69b;
+    font-family: "Nerko One", cursive;
+    font-size: 80px;
+    margin-top: 1.4rem;
+    transition: color 0.25s ease;
+}
+
+.header img {
+    width: 130px;
+    height: 130px;
+    margin-top: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    border-radius: 20%;
+    box-shadow: 0px 2px 7px 0.5px rgb(93, 85, 85);
+    transition: transform 0.5s;
+}
+
+.header img:hover {
+    transform: translateY(-20px);
+}
+
+h1:hover {
+    color: #05619e;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background: #f4f4f4;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Aligns items evenly with space around them */
+    gap: 1rem; /* Space between items */
+    max-width: 1200px; /* Optional: to limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.section {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex: 1 1 300px; /* Grow to fill space, but not smaller than 300px */
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    background-color: #34495e;
+}
+
+.section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #f4f4f4;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.section table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.section table,
+.section th,
+.section td {
+    border: 2px solid #f4f4f4;
+}
+
+.section th,
+.section td {
+    padding: 2px;
+    background-color: cadetblue;
+    color: #f4f4f4;
+}
+
+.section th {
+    background-color: #3498db;
+}
+
+.section td {
+    color: #1a1a1a;
+    background-color: beige;
+}
+
+.warning {
+    background-color: #e74c3c;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    color: #f4f4f4;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #00a69b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #3498db;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .section img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .section table {
+        font-size: 0.9rem;
+    }
+
+    .warning {
+        font-size: 1.2rem;
+    }
+}
