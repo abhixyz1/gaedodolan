@@ -46,10 +46,12 @@ h1:hover {
 }
 
 hr {
-    width: 100%;
+    width: 100vw; /* Lebar 100% dari viewport */
+    max-width: 1200px; /* Tetapkan batas maksimum lebar */
     border: 0;
     height: 2px;
     background: #f4f4f4;
+    margin: 0 auto; /* Pastikan tetap di tengah */
 }
 
 .section-container {
