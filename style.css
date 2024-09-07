@@ -27,6 +27,7 @@ h1 {
     font-size: 40px;
     margin-top: 1.4rem;
     transition: color 0.25s ease;
+    -webkit-text-stroke: 0.5px #ffffff;
 }
 
 .header img {
@@ -41,7 +42,7 @@ h1 {
 }
 
 .header img:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 h1:hover {
@@ -122,11 +123,11 @@ hr {
 
 .warning {
     background-color: #e74c3c;
-    padding: 1.5rem;
+    padding: 1rem;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 1rem auto;
-    max-width: 90%;
+    max-width: 50%;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -141,11 +142,11 @@ hr {
 
 .payment {
     background-color: #2e7dcc;
-    padding: 1.5rem;
+    padding: 1rem;
     color: #fff;
     font-size: 1.5rem;
     margin: 1rem auto;
-    max-width: 90%;
+    max-width: 50%;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -161,7 +162,7 @@ hr {
     /* background-color: #1a1a1a;
     padding: 2rem; */
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     /* border-top: 2px solid #f4f4f4; */
     /* box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); */
 }
